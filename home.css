@@ -1,0 +1,209 @@
+a {
+    color: unset !important;
+    text-decoration: none !important;
+}
+
+
+.main_image {
+    width: 70%;
+    position: relative;
+    top: -70px;
+}
+
+.main_container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 20%;
+    height: 20%;
+}
+
+.main_content_button {
+    width: 150px;
+    border: 2px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    background-color: green;
+    position: relative;
+    bottom: -10px;
+
+}
+
+.main_image_background {
+    background-image: url(assets/Device=Desktop\,\ Picture=1.png);
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.image_background {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: right;
+    right: 70px;
+    gap: 200px;
+    flex-direction: row-reverse;
+}
+
+.main_content_logo {
+
+    width: 50px;
+}
+
+.main_parent_logo {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    gap: 20px;
+}
+
+.main_logo_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo_text {
+    color: white;
+
+}
+
+.main_right_section {
+    width: 50%;
+}
+
+.main_text {
+    color: white;
+}
+
+.last_main_button {
+    width: 150px;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.parent_main_button {
+    display: flex;
+    justify-content: end;
+}
+
+.main_shadow {
+    background-color: rgba(0, 0, 0, 0.418);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+}
+
+.branch_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.branch_image {
+    width: 100%;
+}
+
+.branch_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.branch_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid gray;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.branch_content:hover {
+    box-shadow: 0px 5px 3px 0 #c7c7c7;
+}
+
+.branch_button{
+    display: none;
+    padding-bottom: 5px;
+}
+.last_main_button:hover{
+    cursor: pointer;
+    border:1px solid red ;
+
+}
+.branch_button button{
+    border: 1px solid green;
+    border-radius: 8px ;
+    width: 100px;
+    padding: 5px ;
+    cursor: pointer;
+}
+
+.branch_button button:hover{
+    border: 1px solid red;
+}
+
+.branch_content:hover .branch_button{
+    display: block;
+}
+.main_content_button:hover{
+    border: 1px solid red;
+    cursor: pointer;
+
+}
+.main_image_background{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.branch_text{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.branch_container{
+    margin-bottom: 100px;
+}
+@media  screen and (min-width:280px) and (max-width:400px) {
+    
+}
+@media screen and ( min-width:401px) and (max-width:600px){
+    
+}
+@media screen and (min-width:601px) and ( max-width:768px){
+    
+}
+@media screen and (min-width:769px) and (max-width:869px) {
+    
+}
+@media screen  and ( min-width:870px) and ( max-width:992px){
+    
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    
+}
