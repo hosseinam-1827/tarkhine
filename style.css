@@ -5,12 +5,14 @@ a {
 
 body {
     direction: rtl;
+    margin: 0 ;
 }
 
 header {
     width: 90%;
     margin: 0 auto;
     direction: ltr;
+    margin-top: 5px;
 }
 
 .header-list {
@@ -638,7 +640,7 @@ input::placeholder {
     }
 
     .footer-background {
-        height: 950px;
+        height: 700px;
     }
 
     .footer-right-section {
@@ -648,7 +650,7 @@ input::placeholder {
     }
 
     .footer_shadow {
-        height: 950px;
+        height: 700px;
 
     }
 

@@ -4,6 +4,25 @@
     color: gray;
 }
 
+.input_parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 100%;
+    padding: 5px 5px;
+}
+
+.input_parent input {
+    border: none;
+    background: none;
+    width: 90%;
+}
+
+.input_logo{
+    width:30px;
+}
 .main_text_list_1 {
     color: green;
     list-style-type: none;
@@ -29,7 +48,7 @@
     list-style-type: none;
     background-color: rgba(0, 0, 0, 0.144);
     border-radius: 8px;
-    width: fit-content;
+    width: 85px;
     padding: 5px;
 }
 
@@ -37,7 +56,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
+    gap: 10px;
+    padding: 5px
 }
 
 .main_search_input {
@@ -63,19 +84,22 @@ input::placeholder {
     width: 20px;
     position: relative;
     left: 138px;
-    
+
 }
-.main_parnet_card{
+
+.main_parnet_card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-.main_image_card{
+
+.main_image_card {
     width: 90%;
     height: 225px;
 }
-.main_container_card{
+
+.main_container_card {
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -83,51 +107,59 @@ input::placeholder {
     border: 1px solid gray;
     border-radius: 8px;
 }
-.image_card{
+
+.image_card {
     width: 50%;
 }
-.main_top_container{
+
+.main_top_container {
     display: flex;
     flex-direction: column;
     padding: 5px;
 }
-.card_text{
+
+.card_text {
     width: 80%;
     color: black;
     font-weight: bold;
 }
-.parent_main_text{
+
+.parent_main_text {
     display: flex;
     justify-content: space-between;
-    align-items:start ;
+    align-items: start;
     width: 100%;
 }
 
-.price_parent{
+.price_parent {
     width: 40%;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-.percent_card_style{
+
+.percent_card_style {
     background-color: rgba(224, 115, 115, 0.767);
     border-radius: 12px;
-    padding: 2px;
+    padding: 5px;
     color: red;
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
 }
-.price_card_style{
+
+.price_card_style {
     text-decoration: line-through;
 }
-.last_main_parent{
-    display:flex ;
+
+.last_main_parent {
+    display: flex;
     align-items: end;
     justify-content: space-between;
 
 }
-.main_button_card{
+
+.main_button_card {
     width: 180px;
     padding: 5px;
     background-color: green;
@@ -136,693 +168,948 @@ input::placeholder {
     border-radius: 8px;
     font-weight: bold;
 }
-.main_card_style{
+
+.main_card_style {
     display: flex;
     flex-direction: column;
     align-items: end;
-    justify-content:flex-start ;
+    justify-content: flex-start;
 }
-.parent_card_container{
+
+.parent_card_container {
     display: flex;
     justify-content: space-between;
-    align-items:center ;
+    align-items: center;
     gap: 10px;
     margin-top: 5px;
 
-} 
-input::placeholder {
-    color: white;
+}
+
+input:focus::placeholder {
+    color: white !important;
+    outline: 1px solid green;
+    border: 1px solid green;
 
 }
-@media screen and (min-width:1px ) and (max-width:279px){
-    body{
+
+@media screen and (min-width:1px) and (max-width:279px) {
+    body {
         display: none;
     }
 }
-@media  screen and (min-width:280px) and (max-width:400px) {
-   .parent_card_container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-   }
-   .last_main_parent{
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 10px;
- 
-   }
-   .main_right_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column-reverse;
-    overflow-x: scroll;
-   } 
-   .main_search_input{
-    width: 85%;
-   }
-   .second_list_parent{
-    width: 135%;
-    display:flex ;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0;
-   }
 
-
-   .percent_card_style{
-    padding: 5px;
-   }
-   .price_parent{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-   }
-   .main_image_card{
-    width: 100%;
-    height: 305px;
-   }
-   .parent_main_text{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-   }
-   .main_container_card{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    width: 100%;
-    height: 305px;
-    border: 1px solid gray;
-    border-radius: 8px;
-   }
-   .card_text{
-    width: 90%;
-    text-align: center;
-    font-size: 15px
-   }
-   .main_right_container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column-reverse;
-
-   }
-   .main_search_logo{
-    width: 20px;
-    position: relative;
-    right: 45%;
-   }
-   
-   .header_ul{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0;
-   }
-   .main-h1-text{
-    width: 100%;
-    flex-direction: column;
-    font-size: 14px;
-    align-items: center;
-    display: flex;
-    text-align: center;
-   }
-   .main_content{
-    left: 10%;
-    right: 10%;
-    font-size: xx-small;
-   }
-   .main_list_style{
-    width: 100%;
-    padding: 0;
-   }
-   .second_list_parent{
-    width: 110%;
-    display:flex ;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0;
-   }
-   .second_text_list{
-    font-size: 13px;
-    align-items: center;
-    display: flex;
-    text-align: center;
-     
-
-   }
-   .main-button{
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-   }
-  
-
-}
-@media screen and ( min-width:401px) and (max-width:600px){
-    .parent_card_container{
+@media screen and (min-width:280px) and (max-width:400px) {
+    .parent_card_container {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .last_main_parent{
+    }
+
+    .last_main_parent {
         display: flex;
         flex-direction: column-reverse;
         gap: 10px;
-     
-       }
-       .percent_card_style{
-        padding: 5px;
-       }
-       .price_parent{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-       }
-       .main_image_card{
-        width: 100%;
-        height: 305px;
-       }
-       .parent_main_text{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-       }
-       .main_container_card{
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        width: 100%;
-        height: 305px;
-        border: 1px solid gray;
-        border-radius: 8px;
-       }
-       .card_text{
-        width: 90%;
-        text-align: center;
-        font-size: 15px
-       }
-       .main_right_container{
+
+    }
+
+    .main_right_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         flex-direction: column-reverse;
         overflow-x: scroll;
-       } 
-       .main_search_input{
+    }
+
+    .main_search_input {
         width: 85%;
-       }
-       .main_search_logo{
+    }
+
+    .second_list_parent {
+        width: 135%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+    }
+
+
+    .percent_card_style {
+        padding: 5px;
+    }
+
+    .price_parent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .main_image_card {
+        width: 100%;
+        height: 305px;
+    }
+
+    .parent_main_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_container_card {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+
+        border: 1px solid gray;
+        border-radius: 8px;
+    }
+
+    .card_text {
+        width: 90%;
+        text-align: center;
+        font-size: 15px
+    }
+
+    .main_right_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column-reverse;
+
+    }
+
+    .main_search_logo {
         width: 20px;
         position: relative;
         right: 45%;
-       }
-       
-       .header_ul{
+    }
+
+    .header_ul {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
-       .main-h1-text{
+    }
+
+    .main-h1-text {
+        width: 100%;
+        flex-direction: column;
+        font-size: 14px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .main_content {
+        left: 10%;
+        right: 10%;
+        font-size: xx-small;
+    }
+
+    .main_list_style {
+        width: 100%;
+        padding: 0;
+    }
+
+    .second_list_parent {
+        width: 110%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .second_text_list {
+        font-size: 13px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+
+
+    }
+
+    .main-button {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:401px) and (max-width:600px) {
+    .parent_card_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .last_main_parent {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 10px;
+
+    }
+
+    .percent_card_style {
+        padding: 5px;
+    }
+
+    .price_parent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .main_image_card {
+        width: 100%;
+        height: 305px;
+    }
+
+    .parent_main_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_container_card {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+
+        border: 1px solid gray;
+        border-radius: 8px;
+    }
+
+    .card_text {
+        width: 90%;
+        text-align: center;
+        font-size: 15px
+    }
+
+    .main_right_container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column-reverse;
+        overflow-x: scroll;
+        direction: ltr;
+    }
+
+    .main_search_input {
+        width: 85%;
+    }
+
+    .main_search_logo {
+        width: 20px;
+        position: relative;
+        right: 45%;
+    }
+
+    .header_ul {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .main-h1-text {
         width: 100%;
         flex-direction: column;
         font-size: 20px;
         align-items: center;
         display: flex;
         text-align: center;
-       }
-       .main_content{
-        left: 10%;
-        right: 10%;
-        font-size: xx-small;
-       }
-       .main_list_style{
-        width: 100%;
-        padding: 0;
-       }
-       .second_list_parent{
-        width: 135%;
-        display:flex ;
-        justify-content: space-between;
-        gap: 10px;
-        padding: 0;
-       }
-
-       .second_text_list{
-        width: fit-content;
-        font-size: 15px;
-        
-
-       }
-       .main-button{
-        width: 240px;
-       }
     }
 
-@media screen and (min-width:601px) and ( max-width:735px){
-    .parent_card_container{
+    .main_content {
+        left: 10%;
+        right: 10%;
+        font-size: xx-small;
+    }
+
+    .main_list_style {
+        width: 100%;
+        padding: 0;
+    }
+
+    .second_list_parent {
+        width: 135%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .second_text_list {
+        width: fit-content;
+        font-size: 15px;
+
+
+    }
+
+    .main-button {
+        width: 240px;
+    }
+
+    footer {
+        width: 100%;
+    }
+    .input_parent{
+        justify-content: right;
+        display: flex;
+        direction: rtl;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:735px) {
+    .parent_card_container {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .last_main_parent{
+    }
+
+    .last_main_parent {
         display: flex;
         flex-direction: column-reverse;
         gap: 10px;
-     
-       }
-       .percent_card_style{
+
+    }
+
+    .percent_card_style {
         padding: 5px;
-       }
-       .price_parent{
+    }
+
+    .price_parent {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-       }
-       .main_image_card{
+    }
+
+    .main_image_card {
         width: 100%;
         height: 305px;
-       }
-       .parent_main_text{
+    }
+
+    .parent_main_text {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .main_container_card{
+    }
+
+    .main_container_card {
         display: flex;
         align-items: start;
         justify-content: space-between;
         width: 100%;
-        height: 305px;
+
         border: 1px solid gray;
         border-radius: 8px;
-       }
-       .card_text{
+    }
+
+    .card_text {
         width: 90%;
         text-align: center;
         font-size: 15px
-       }
-       .main_right_container{
+    }
+
+    .main_right_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         flex-direction: column-reverse;
-    
-       }
-       .main_search_logo{
+
+    }
+
+    .main_search_logo {
         width: 20px;
         position: relative;
         right: 45%;
-       }
-       
-       .header_ul{
+    }
+
+    .header_ul {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
-       .main-h1-text{
+    }
+
+    .main-h1-text {
         width: 100%;
         flex-direction: column;
         font-size: 25px;
         align-items: center;
         display: flex;
         text-align: center;
-       }
-       .main_content{
+    }
+
+    .main_content {
         left: 10%;
         right: 10%;
         font-size: xx-small;
-       }
-       .main_list_style{
+    }
+
+    .main_list_style {
         width: 100%;
         padding: 0;
-       }
-       .second_list_parent{
+    }
+
+    .second_list_parent {
         width: 100%;
-        display:flex ;
+        display: flex;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
+    }
 
-       .second_text_list{
+    .second_text_list {
         width: fit-content;
         font-size: 15px;
-        
 
-       }
-       .main-button{
+
+    }
+
+    .main-button {
         width: 260px;
         padding: 12px;
-       }   
+    }
+
+    footer {
+        width: 100%;
+    }
 }
-@media  screen and (min-width:736px) and (max-width:768px) {
-    .parent_card_container{
+
+@media screen and (min-width:736px) and (max-width:768px) {
+    .parent_card_container {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .last_main_parent{
-        display: flex;
-        justify-content:space-between ;
-        width: 100%;
-        
-        gap: 10px;
-     
-       }
-       .percent_card_style{
-        padding: 5px;
-       }
-       .main_card_star{
+    }
+
+    .last_main_parent {
         display: flex;
         justify-content: space-between;
-       }
-       .main_top_container{
+        width: 100%;
+
         gap: 10px;
-       }
-       .price_parent{
+
+    }
+
+    .percent_card_style {
+        padding: 5px;
+    }
+
+    .main_card_star {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_top_container {
+        gap: 10px;
+    }
+
+    .price_parent {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-       }
-       .main_image_card{
+    }
+
+    .main_image_card {
         width: 100%;
         height: 305px;
-       }
-       .parent_main_text{
+    }
+
+    .parent_main_text {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .main_container_card{
+    }
+
+    .main_container_card {
         display: flex;
         align-items: start;
         justify-content: space-between;
         width: 100%;
-        height: 305px;
+
         border: 1px solid gray;
         border-radius: 8px;
-       }
-       .card_text{
+    }
+
+    .card_text {
         width: 90%;
         text-align: center;
         font-size: 15px
-       }
-       .main_right_container{
+    }
+
+    .main_right_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         flex-direction: column-reverse;
-    
-       }
-       .main_search_logo{
+
+    }
+
+    .main_search_logo {
         width: 20px;
         position: relative;
         right: 45%;
-       }
-       
-       .header_ul{
+    }
+
+    .header_ul {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
-       .main-h1-text{
+    }
+
+    .main-h1-text {
         width: 100%;
         flex-direction: column;
         font-size: 25px;
         align-items: center;
         display: flex;
         text-align: center;
-       }
-       .main_content{
+    }
+
+    .main_content {
         left: 10%;
         right: 10%;
         font-size: xx-small;
-       }
-       .main_list_style{
+    }
+
+    .main_list_style {
         width: 100%;
         padding: 0;
-       }
-       .second_list_parent{
+    }
+
+    .second_list_parent {
         width: 100%;
-        display:flex ;
+        display: flex;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
+    }
 
-       .second_text_list{
+    .second_text_list {
         width: fit-content;
         font-size: 15px;
-        
 
-       }
-       .main-button{
+
+    }
+
+    .main-button {
         width: 260px;
         padding: 12px;
-       }
-      
+    }
+
+    footer {
+        width: 100%;
+    }
+
 }
+
 @media screen and (min-width:769px) and (max-width:869px) {
-    .parent_card_container{
+    .parent_card_container {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .last_main_parent{
+    }
+
+    .last_main_parent {
         display: flex;
         justify-content: space-between;
         gap: 10px;
-     
-       }
-       .main_top_container{
+
+    }
+
+    .main_top_container {
         display: flex;
         flex-direction: column;
         padding: 5px;
         gap: 20px;
-       }
-       .percent_card_style{
+    }
+
+    .percent_card_style {
         padding: 5px;
-       }
-       .price_parent{
+    }
+
+    .price_parent {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-       }
-       .main_image_card{
+    }
+
+    .main_image_card {
         width: 100%;
         height: 305px;
-       }
-       .parent_main_text{
+    }
+
+    .parent_main_text {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .main_container_card{
+    }
+
+    .main_container_card {
         display: flex;
         align-items: start;
         justify-content: space-between;
         width: 100%;
-        height: 305px;
+
         border: 1px solid gray;
         border-radius: 8px;
-       }
-       .card_text{
+    }
+
+    .card_text {
         width: 100%;
         text-align: center;
         font-size: 15px
-       }
-       .main_right_container{
+    }
+
+    .main_right_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         flex-direction: column-reverse;
-    
-       }
-       .main_search_logo{
+
+    }
+
+    .main_search_logo {
         width: 20px;
         position: relative;
         right: 45%;
-       }
-       
-       .header_ul{
+    }
+
+    .header_ul {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
-       .main-h1-text{
+    }
+
+    .main-h1-text {
         width: 100%;
         flex-direction: column;
         font-size: 25px;
         align-items: center;
         display: flex;
         text-align: center;
-       }
-       .main_content{
+    }
+
+    .main_content {
         left: 10%;
         right: 10%;
         font-size: xx-small;
-       }
-       .main_list_style{
+    }
+
+    .main_list_style {
         width: 100%;
         padding: 0;
-       }
-       .second_list_parent{
+    }
+
+    .second_list_parent {
         width: 100%;
-        display:flex ;
+        display: flex;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
+    }
 
-       .second_text_list{
+    .second_text_list {
         width: fit-content;
         font-size: 15px;
-        
 
-       }
-       .main-button{
+
+    }
+
+    .main-button {
         width: 260px;
         padding: 12px;
-       }    
+    }
+
+    footer {
+        width: 100%;
+    }
 }
-@media screen  and ( min-width:870px) and ( max-width:992px){
-    .parent_card_container{
+
+@media screen and (min-width:870px) and (max-width:992px) {
+    .parent_card_container {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .last_main_parent{
+    }
+
+    .last_main_parent {
         display: flex;
         justify-content: space-between;
         gap: 10px;
-     
-       }
-       .main_top_container{
+
+    }
+
+    .main_top_container {
         display: flex;
         flex-direction: column;
         padding: 5px;
         gap: 20px;
-       }
-       .percent_card_style{
+    }
+
+    .percent_card_style {
         padding: 5px;
-       }
-       .price_parent{
+    }
+
+    .price_parent {
         width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-       }
-       .main_image_card{
+    }
+
+    .main_image_card {
         width: 100%;
         height: 305px;
-       }
-       .parent_main_text{
+    }
+
+    .parent_main_text {
         display: flex;
         flex-direction: column;
         width: 100%;
-       }
-       .main_container_card{
+    }
+
+    .main_container_card {
         display: flex;
         align-items: start;
         justify-content: space-between;
         width: 100%;
-        height: 305px;
+
         border: 1px solid gray;
         border-radius: 8px;
-       }
-       .card_text{
+    }
+
+    .card_text {
         width: 100%;
         text-align: center;
         font-size: 15px
-       }
-       .main_right_container{
+    }
+
+    .main_right_container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
         flex-direction: column-reverse;
-    
-       }
-       .main_search_logo{
+
+    }
+
+    .main_search_logo {
         width: 20px;
         position: relative;
         right: 45%;
-       }
-       
-       .header_ul{
+    }
+
+    .header_ul {
         display: flex;
         flex-direction: row-reverse;
         width: 100%;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
-       .main-h1-text{
+    }
+
+    .main-h1-text {
         width: 100%;
         flex-direction: column;
         font-size: 25px;
         align-items: center;
         display: flex;
         text-align: center;
-       }
-       .main_content{
+    }
+
+    .main_content {
         left: 10%;
         right: 10%;
         font-size: xx-small;
-       }
-       .main_list_style{
+    }
+
+    .main_list_style {
         width: 100%;
         padding: 0;
-       }
-       .second_list_parent{
+    }
+
+    .second_list_parent {
         width: 100%;
-        display:flex ;
+        display: flex;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
-       }
+    }
 
-       .second_text_list{
+    .second_text_list {
         width: fit-content;
         font-size: 15px;
-        
 
-       }
-       .main-button{
+
+    }
+
+    .main-button {
         width: 260px;
         padding: 12px;
-       }      
-      
+    }
+
+    footer {
+        width: 100%;
+    }
 }
-@media screen and (min-width:993px) and (max-width:1200px){
-    
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .parent_card_container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .last_main_parent {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+
+    .main_top_container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        gap: 20px;
+    }
+
+    .percent_card_style {
+        padding: 5px;
+    }
+
+    .price_parent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .main_image_card {
+        width: 110%;
+        height: 305px;
+    }
+
+    .parent_main_text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .main_container_card {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+
+        border: 1px solid gray;
+        border-radius: 8px;
+    }
+
+    .card_text {
+        width: 100%;
+        text-align: center;
+        font-size: 15px
+    }
+
+    .main_right_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column-reverse;
+
+    }
+
+    .main_search_logo {
+        width: 20px;
+        position: relative;
+        right: 45%;
+    }
+
+    .header_ul {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .main-h1-text {
+        width: 100%;
+        flex-direction: column;
+        font-size: 25px;
+        align-items: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .main_content {
+        left: 10%;
+        right: 10%;
+        font-size: xx-small;
+    }
+
+    .main_list_style {
+        width: 100%;
+        padding: 0;
+    }
+
+    .second_list_parent {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .second_text_list {
+        width: fit-content;
+        font-size: 15px;
+
+
+    }
+
+    .main-button {
+        width: 260px;
+        padding: 12px;
+    }
+
+    footer {
+        width: 100%;
+    }
 }
