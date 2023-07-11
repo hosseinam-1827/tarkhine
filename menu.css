@@ -1112,4 +1112,11 @@ input:focus::placeholder {
     footer {
         width: 100%;
     }
+    .footer-background {
+        height: 505px;
+    }
+    .footer_shadow {
+        height: 505px;
+
+    }
 }
