@@ -111,7 +111,7 @@ main {
     color: white;
     background-color: green;
     border: none;
-    padding: 8px 60px;
+    padding: 12px 60px;
     border-radius: 8px;
 }
 
@@ -656,11 +656,11 @@ input::placeholder {
     }
 
     .footer-background {
-        height: 750px;
+        height: 800px;
     }
 
     .footer_shadow {
-        height: 750px;
+        height: 800px;
 
     }
 
@@ -814,11 +814,11 @@ input::placeholder {
     }
 
     .footer-background {
-        height: 750px;
+        height: 800px;
     }
 
     .footer_shadow {
-        height: 750px;
+        height: 800px;
 
     }
 
