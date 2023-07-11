@@ -73,7 +73,9 @@
     align-items: center;
     justify-content: space-between;
     width: 90%;
+    gap: 50px;
 }
+
 
 input::placeholder {
     color: rgb(102, 102, 102) !important;
@@ -280,7 +282,10 @@ input:focus::placeholder {
         flex-direction: column-reverse;
 
     }
-
+    .input_parent{
+        width: 90%;
+        margin: 0 auto;
+    }
     .main_search_logo {
         width: 20px;
         position: relative;
@@ -322,6 +327,7 @@ input:focus::placeholder {
         justify-content: space-between;
         gap: 10px;
         padding: 0;
+        overflow-x: scroll;
     }
 
     .second_text_list {
@@ -334,7 +340,7 @@ input:focus::placeholder {
     }
 
     .main-button {
-        width: 180px;
+        width: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -343,6 +349,12 @@ input:focus::placeholder {
 
     footer {
         width: 100%;
+    }
+    .main_top_container{
+        padding: 0 10px;
+    }
+    .image_card{
+        height: 305px;
     }
 }
 
@@ -359,7 +371,9 @@ input:focus::placeholder {
         gap: 10px;
 
     }
-
+    .main_top_container{
+        padding: 0 10px;
+    }
     .percent_card_style {
         padding: 5px;
     }
@@ -373,7 +387,7 @@ input:focus::placeholder {
 
     .main_image_card {
         width: 100%;
-        height: 305px;
+        height: 306px;
     }
 
     .parent_main_text {
@@ -404,8 +418,7 @@ input:focus::placeholder {
         justify-content: space-between;
         width: 100%;
         flex-direction: column-reverse;
-        overflow-x: scroll;
-        direction: ltr;
+       
     }
 
     .main_search_input {
@@ -430,7 +443,7 @@ input:focus::placeholder {
     .main-h1-text {
         width: 100%;
         flex-direction: column;
-        font-size: 20px;
+        font-size: 21px;
         align-items: center;
         display: flex;
         text-align: center;
@@ -448,11 +461,14 @@ input:focus::placeholder {
     }
 
     .second_list_parent {
-        width: 135%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         gap: 10px;
         padding: 0;
+        overflow-x: scroll;
+        text-align: center;
+   
     }
 
     .second_text_list {
@@ -473,6 +489,11 @@ input:focus::placeholder {
         justify-content: right;
         display: flex;
         direction: rtl;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .image_card{
+        height: 305px;
     }
 }
 
@@ -493,7 +514,12 @@ input:focus::placeholder {
     .percent_card_style {
         padding: 5px;
     }
-
+    .image_card{
+        height: 305px;
+    }
+    .main_top_container{
+        padding: 0 10px;
+    }
     .price_parent {
         width: 100%;
         display: flex;
@@ -503,7 +529,7 @@ input:focus::placeholder {
 
     .main_image_card {
         width: 100%;
-        height: 305px;
+        height: 306px;
     }
 
     .parent_main_text {
@@ -582,7 +608,7 @@ input:focus::placeholder {
 
     .second_text_list {
         width: fit-content;
-        font-size: 15px;
+        font-size: 20px;
 
 
     }
@@ -607,12 +633,12 @@ input:focus::placeholder {
     .last_main_parent {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 335px;
 
         gap: 10px;
 
     }
-
+    
     .percent_card_style {
         padding: 5px;
     }
@@ -624,6 +650,7 @@ input:focus::placeholder {
 
     .main_top_container {
         gap: 10px;
+        padding: 0 10px;
     }
 
     .price_parent {
@@ -632,7 +659,7 @@ input:focus::placeholder {
         justify-content: space-between;
         flex-direction: row-reverse;
     }
-
+   
     .main_image_card {
         width: 100%;
         height: 305px;
@@ -649,11 +676,13 @@ input:focus::placeholder {
         align-items: start;
         justify-content: space-between;
         width: 100%;
-
+       
         border: 1px solid gray;
         border-radius: 8px;
     }
-
+    .image_card{
+        height: 305px;
+    }
     .card_text {
         width: 90%;
         text-align: center;
@@ -714,7 +743,7 @@ input:focus::placeholder {
 
     .second_text_list {
         width: fit-content;
-        font-size: 15px;
+        font-size: 20px;
 
 
     }
@@ -747,10 +776,12 @@ input:focus::placeholder {
     .main_top_container {
         display: flex;
         flex-direction: column;
-        padding: 5px;
+        padding: 0 10px;
         gap: 20px;
     }
-
+    .image_card{
+        height: 305px;
+    }
     .percent_card_style {
         padding: 5px;
     }
@@ -843,7 +874,7 @@ input:focus::placeholder {
 
     .second_text_list {
         width: fit-content;
-        font-size: 15px;
+        font-size: 20px;
 
 
     }
@@ -875,10 +906,12 @@ input:focus::placeholder {
     .main_top_container {
         display: flex;
         flex-direction: column;
-        padding: 5px;
+        padding: 0 10px;
         gap: 20px;
     }
-
+    .image_card{
+        height: 305px;
+    }
     .percent_card_style {
         padding: 5px;
     }
@@ -971,7 +1004,7 @@ input:focus::placeholder {
 
     .second_text_list {
         width: fit-content;
-        font-size: 15px;
+        font-size: 20px;
 
 
     }
@@ -987,8 +1020,8 @@ input:focus::placeholder {
 }
 
 @media screen and (min-width:993px) and (max-width:1200px) {
-    .parent_card_container {
-        display: flex;
+     .parent_card_container {
+       display: flex;
         flex-direction: column;
         width: 100%;
     }
@@ -1003,10 +1036,12 @@ input:focus::placeholder {
     .main_top_container {
         display: flex;
         flex-direction: column;
-        padding: 5px;
+        padding: 0 10px;
         gap: 20px;
     }
-
+    .image_card{
+        height: 305px;
+    }
     .percent_card_style {
         padding: 5px;
     }
@@ -1099,7 +1134,7 @@ input:focus::placeholder {
 
     .second_text_list {
         width: fit-content;
-        font-size: 15px;
+        font-size: 20px;
 
 
     }
@@ -1119,4 +1154,143 @@ input:focus::placeholder {
         height: 505px;
 
     }
+}
+@media screen and (min-width:1201px) {
+    .parent_card_container {
+        display: flex;
+       justify-content: space-between;
+         width: 100%;
+     }
+ 
+     .last_main_parent {
+         display: flex;
+         justify-content: space-between;
+         gap: 10px;
+ 
+     }
+ 
+     .main_top_container {
+         display: flex;
+         flex-direction: column;
+         padding: 0 10px;
+         width: 80%;
+         gap: 20px;
+     }
+     .image_card{
+         height: 305px;
+     }
+     .percent_card_style {
+         padding: 5px;
+     }
+     .main_card_star{
+        width: 150px;
+     }
+     .price_parent {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: row-reverse;
+     }
+ 
+     .main_image_card {
+         width: 90%;
+         height: 305px;
+     }
+ 
+     .parent_main_text {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+     }
+ 
+     .main_container_card {
+         display: flex;
+         align-items: start;
+         justify-content: space-between;
+         width: 100%;
+ 
+         border: 1px solid gray;
+         border-radius: 8px;
+     }
+ 
+     .card_text {
+         width: 100%;
+         text-align: center;
+         font-size: 15px
+     }
+ 
+     .main_right_container {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 100%;
+         flex-direction: column-reverse;
+ 
+     }
+ 
+     .main_search_logo {
+         width: 20px;
+         position: relative;
+         right: 45%;
+     }
+ 
+     .header_ul {
+         display: flex;
+         flex-direction: row-reverse;
+         width: 100%;
+         justify-content: space-between;
+         gap: 10px;
+         padding: 0;
+     }
+ 
+     .main-h1-text {
+         width: 100%;
+         flex-direction: column;
+         font-size: 30px;
+         align-items: center;
+         display: flex;
+         text-align: center;
+     }
+ 
+     .main_content {
+         left: 10%;
+         right: 10%;
+         font-size: xx-small;
+     }
+ 
+     .main_list_style {
+         width: 100%;
+         padding: 0;
+     }
+ 
+     .second_list_parent {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         gap: 10px;
+         padding: 0;
+     }
+ 
+     .second_text_list {
+         width: fit-content;
+         font-size: 20px;
+ 
+ 
+     }
+ 
+     .main-button {
+         width: 260px;
+         padding: 12px;
+     }
+ 
+     footer {
+         width: 100%;
+     }
+     .footer-background {
+         height: 340px;
+     }
+     .footer_shadow {
+         height: 340px;
+ 
+     }
 }
